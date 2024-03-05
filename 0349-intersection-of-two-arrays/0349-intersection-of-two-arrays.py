@@ -3,6 +3,6 @@ class Solution:
         new =[]
         for i in nums1:
             if i in nums2:
-                if i not in new:
                     new.append(i)
+        new = list(set(new))
         return new
