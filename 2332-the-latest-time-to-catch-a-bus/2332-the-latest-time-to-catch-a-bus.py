@@ -10,7 +10,6 @@ class Solution:
                     res = passengers[pas] - 1
                 pas += 1
                 cp -= 1
-            if cp > 0 and (pas == 0 or passengers[pas - 1] != b):
+            if cp > 0 and (pas == 0 or passengers[pas- 1] != b):
                 res = b
-
         return res
