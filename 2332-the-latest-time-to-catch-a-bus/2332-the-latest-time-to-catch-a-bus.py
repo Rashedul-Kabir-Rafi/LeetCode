@@ -1,5 +1,6 @@
 class Solution:
     def latestTimeCatchTheBus(self, buses: List[int], passengers: List[int], capacity: int) -> int:
+        
         buses.sort()
         passengers.sort()
         pas, res = 0, 0
