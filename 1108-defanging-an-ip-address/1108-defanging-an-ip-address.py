@@ -1,9 +1,9 @@
 class Solution:
     def defangIPaddr(self, address: str) -> str:
-        final = ''
-        for i in address:
-            if i == '.':
-                final += '[.]'
+        result = []
+        for char in address:
+            if char == '.':
+                result.append('[.]')
             else:
-                final += i
-        return final
+                result.append(char)
+        return ''.join(result)
