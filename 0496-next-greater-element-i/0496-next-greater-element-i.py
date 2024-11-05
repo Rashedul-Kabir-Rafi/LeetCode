@@ -9,8 +9,7 @@ class Solution:
                         if nums2[k] > nums2[j]:
                             result.append(nums2[k])
                             found = True
-                            break
-                            
+                            break                            
                     if not found:
                         result.append(-1)
         return result
